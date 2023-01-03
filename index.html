@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+		<link rel="stylesheet" href="main.css" />
+
+		<script src="./script.js" defer></script>
+		<title>Recipe App</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="sidebar">
+				<button class="btn btn-sidebar__close">&lt;</button>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+				</ul>
+			</div>
+
+			<main id="container">
+				<nav id="nav-top">
+					<button class="btn nav-top__btn btn-sidebar__open"><i class="fa-solid fa-bars-staggered"></i></button>
+					<button class="btn nav-top__btn btn-notif"><i class="fa-regular fa-bell"></i></button>
+				</nav>
+				<section id="search">
+					<p>Hi, Stranger</p>
+					<h2>What do you want to cook today?</h2>
+					<div class="search-div">
+						<input id="search-input" type="text" placeholder="Search recipes" />
+						<button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+					</div>
+				</section>
+				<section id="favs">
+					<h3>Your Favourite Recipes</h3>
+					<div class="favs-container"></div>
+				</section>
+				<section id="random-recipe"></section>
+				<nav id="nav-bottom">
+					<button class="btn nav-bottom__btn">
+						<a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+					</button>
+					<button class="btn nav-bottom__btn">
+						<a href="#"><i class="fa-solid fa-heart"></i></a>
+					</button>
+					<button class="btn nav-bottom__btn">
+						<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+					</button>
+					<button class="btn nav-bottom__btn">
+						<a href="#"><i class="fa-solid fa-user"></i></a>
+					</button>
+				</nav>
+			</main>
+
+			<div class="recipe-popup">
+				<div class="recipe-popup__top"></div>
+				<div class="recipe-popup__bottom">
+					<h4>Ingredients:</h4>
+				</div>
+			</div>
+			<div class="search-popup"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+#random-recipe {
+	width: 100%;
+	height: 20%;
+	border-radius: 1rem;
+	background-color: #b97087;
+	overflow: hidden;
+	position: relative;
+	margin-top: 1rem;
+	display: flex;
+	&::after {
+		content: 'Random Recipe';
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.2rem 0.5rem;
+		position: absolute;
+		top: 10%;
+		background-color: white;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	.random-recipe-container {
+		width: 100%;
+		height: 100%;
+	}
+	.random-recipe-img {
+		width: 100%;
+		height: 70%;
+		cursor: pointer;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.random-bottom {
+		color: white;
+		width: 100%;
+		height: 30%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+}
